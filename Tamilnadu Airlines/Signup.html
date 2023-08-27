@@ -1,0 +1,76 @@
+<!doctype>
+<html>
+    <head>
+        <title>SignUp-Tamilnadu Airlines</title>
+    </head>
+    <body>
+        <h1>Tamilnadu Airlines</h1>
+        <a href="index.html">Home</a>
+        <a href="Bookings.html">My Bookings</a>
+        <a href="Destination.html">Destinations</a>
+        <a href="Login.html">Login</a>
+        <a href="Signup.html">SignUp</a>
+        <h2>SignUp</h2>
+        <form action="login.html">
+            <table cellpadding="10">
+                <tr>
+                    <td>
+                        Title<br>
+                        <input type="radio" name="title" value="mister" id="mister" required>
+                        <label for="mister">Mr.</label>
+                        <input type="radio" name="title" value="missus" id="missus">
+                        <label for="missus">Mrs.</label>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="firstName">First Name</label><br>
+                        <input type="text" name="FirstName" id="firstName" required>
+                    </td>
+                    <td>
+                        <label for="lastName">Last Name</label><br>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </td>
+                </tr>  
+                <tr>
+                    <td>
+                        <label for="email">Email</label><br>
+                        <input type="text" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required title="xxxx@yyyy.zzz" format>
+                    </td>
+                    <td>
+                        <label for="mobile Number">Mobile Number</label><br>
+                        <input type="text" name="mobile Number" id="mobile Number" pattern="[0-9]{10}">
+                    </td>
+                </tr>  
+                <tr>
+                    <td>
+                        <label for="password">password</label><br>
+                        <input type="text" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="A number, 1 uppercase, 1 lowercase with 8 or more characters" required>
+                    </td>
+                    <td>
+                        <label for="confirm password">Confirm password</label><br>
+                         <input type="text" name="confirm password" id="confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="A number, 1 uppercase, 1 lowercase with 8 or more characters" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="language">Preferred Language</label><br></td>
+                    <select name="Language" id="Language">
+                        <option>Tamil</option>
+                        <option>English</option>
+                        <option>Telugu</option>
+                        <option>Malayalam</option>
+                        <option>Kannada</option>
+                    </select>
+                    <td>
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                        <label for="newsletter">Receive Newsletter</label>
+                    </td>
+                </tr>  
+                <tr>
+                    <td><input type="submit" value="Register"></td>
+                    <td></td>
+                </tr>  
+            </table>
+        </form>
+    </body>
+</html>
